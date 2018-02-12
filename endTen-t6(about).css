@@ -1,0 +1,198 @@
+/*
+  Created by: @xc0orotun on
+  Monday 12 February 2018 23:47 am
+*/
+body{
+  margin-top:55px;
+}
+.card {
+    height:1030px;
+    margin: 1px;
+    width:auto;
+    padding-top:30px;
+    padding-left:20px;
+    padding-right:20px;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.6);
+    transition: 0.3s;
+    border-radius: 25px 25px 0 0;
+    background-color:#808080;
+}
+.card-footer {
+    font-family: 'Josefin Slab', serif;
+    height:40px;
+    width:auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.6);
+    transition: 0.3s;
+    border-radius: 0 0 25px 25px;
+    background-color:#808080;
+}
+.card-in {
+    height:280px;
+       box-shadow: 0 4px 8px 2px rgba(0,0,0,0.6);
+    width:auto;
+    padding-top:10px;
+    transition: 0.3s;
+    border-radius: 5px 70px 5px 70px;
+    margin-bottom:15px;
+    background-color:#696969;
+}
+h1.end9-title {
+     font-family: Optima, sans-serif;
+}
+a.social {
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+a.social:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+.social-out{
+   height: 20px;
+   width: 20px;
+   border-radius: 50px;
+   background: #a9a9a9;
+   padding: 15px;
+   margin: 1px;
+   display:inline-block;
+   box-shadow: 0 4px 8px 2px rgba(0,0,0,0.4);
+}
+.about-me {
+   color:white;
+   font-family: 'Quicksand', sans-serif;
+}
+#about-me1 {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 40px;
+   display: inline-block;
+}
+.main {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-about{
+   font-size:17px;
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+.main-contact {
+  font-size:30px;
+  color:white;
+}
+a.main-contact-a{
+  font-size:16px;
+  margin-left:50px;
+  color: #d3d3d3;
+  text-decoration: none;
+}
+.copyrights {
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+    height: 22px;
+    width: 330px;
+    background-color: #dcdcdc;
+    font-family: 'Josefin Slab', serif;
+    border-radius: 3px;
+}
+img{
+   border: 2px solid black;
+   border-radius: 80px;
+   box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+}
+/* Bar menu */
+.car {
+    font-size:30px;
+    text-align:left;
+    border-radius:5px;
+    position: fixed;
+    padding-right:15px;
+    padding-left:5px;
+    padding-top:5px;
+    top:4px;
+    right:4px;
+    left:4px;
+    height:30px;
+    background-color:#a9a9a9;
+    border: 3px solid #d3d3d3;
+}
+/*
+Dropdown
+*/
+/*hide the inputs*/
+input{display:none}
+  
+/*show the second levele menu of the selected voice*/
+input:checked ~ .submenu{
+  max-height:300px;
+  transition: 0.3s ease-in;
+}
+
+/*style for the second level menu*/
+.submenu{
+  max-height:0;
+  margin:5px;
+  overflow:hidden;
+  transition: 0.3s ease-out;
+  min-width:100%;
+}
+
+.submenu a{
+  font-family: 'Jaldi', sans-serif;
+  padding-top:4px;
+  font-size:20px;
+  display:block;
+  color:black;
+  width:auto;
+  text-decoration:none;
+  transition:background .3s;
+}
+.submenu a:hover{
+  color:white;
+}
+.option {
+  text-align:center;
+  border-radius:5px;
+  border: 3px solid #d3d3d3;
+  color:black;
+  margin:5px;
+  height:40px;
+  width:auto;
+  text-decoration:none;
+  list-style-type:none;
+  background-color:#a9a9a9;
+}
+.option:hover {
+   background:rgba(0,0,0,.3);
+}
+label{
+   font-size:0.1px;
+}
+/* Apple bar icon CSS */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    border-radius:2px;
+    background-color: #333;
+    margin: 8px ;
+    transition: 0.3s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+    transform: rotate(135deg) translate(0px, -7.5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+    transform: rotate(225deg) translate(0px, 6.5px);
+}
