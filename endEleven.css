@@ -1,0 +1,346 @@
+/*
+  Created by @xc0orotun
+  Saturday 24 February 2018 3:05pm
+*/
+/* 
+  A new burger menu modified my @xc0orotun
+*/
+body h1 {
+  position: fixed;
+  top: 3px;
+  left: 40px;
+  z-index: 6;
+  font-size: 20px;
+  font-weight: 900;
+  color: #696969;
+  font-family: 'Raleway', sans-serif;
+}
+body h1 > span {
+  text-transform: none;
+  opacity: .5;
+  font-weight: 300;
+  font-size: 12px;
+  color: #696969;
+  font-family: 'Raleway', sans-serif;
+}
+/*hide the inputs*/
+input {
+  display:none;
+}
+body input + label.main1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 30px;
+  z-index: 5;
+}
+body input + label.main1 span {
+  position: absolute;
+  border-radius:3px;
+  width: 25px;
+  height: 3px;
+  top: 30%;
+  margin-top: -4px;
+  left: 0;
+  display: block;
+  background: #696969; /* menu color */
+  transition: .3s;
+}
+body input + label.main1 span:first-child {
+  top: 3px;
+}
+body input + label.main1 span:last-child {
+  top: 16px;
+}
+body label.main1:hover {
+  cursor: pointer;
+}
+body input:checked + label.main1 span {
+  opacity: 0;
+  top: 50%;
+}
+body input:checked + label.main1 span:first-child {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+body input:checked + label.main1 span:last-child {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+body input ~ center nav {
+  background:#d3d3d3; /* burger background color */
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  right:5px;
+  width: auto !important; 
+  height: 40px;
+  z-index: 3;
+  transition: .35s;
+  transition-delay: .1s;
+  overflow: hidden;
+  border-radius: 5px;
+  border:3px solid #c0c0c0;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.1);
+ 
+}
+body input:checked ~ center nav {
+  background:white;
+  height: 100%!important;
+  top:0;
+  left:0;
+  right:0;
+  border-radius:0px;
+  transition-delay: 0s;
+  padding-top:90px;
+  border:0px;
+}
+body input:checked ~ center nav {
+  opacity: 1;
+  transition-delay: .1s;
+  transition: .3s;
+}
+body input:checked ~ center nav > div {
+ padding:19px;
+ transition: .3s;
+}
+a {
+  display: none;
+}
+body input:checked ~ center nav > div > a {
+  text-decoration: none;
+  font-size:20px;
+  color: black; /* a tag color LINK */
+  display: block;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:5px;
+  transition: .3s;
+  font-family: 'Josefin Slab', serif;
+}
+/*
+  End of burger menu
+*/
+/*
+  CSS for main content after burger menu
+*/
+/*
+  more social links !
+*/
+body input:checked ~ center nav > div.a {
+  display:inline-block;
+}
+body input:checked ~ center nav > div.a > a.social {
+  font-size: 30px;
+  text-decoration: none;
+  color:#696969;
+}
+body input:checked ~ center nav > div.a > a.social:hover {
+  background:none;
+  color:black;
+}
+body{
+  padding-top:125px;
+}
+.card {
+  height:120px;
+  margin: 1px; 
+  padding-top:5px;
+  padding-left:5px;
+  padding-right:20px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px 15px 15px;
+  background-color:#a9a9a9;
+}
+.more-style {
+  width:15px;
+  height:15px;
+  background:#808080;
+  font-size:12px;
+  color:#dcdcdc;
+  border-radius:50px;
+  margin-right:100%;
+  margin-top:-15px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  border:.5px solid black;
+}
+.more-style2 {
+  width:15px;
+  height:15px;
+  background:#808080;
+  font-size:12px;
+  color:#dcdcdc;
+  border-radius:50px;
+  margin-left:100%;
+  margin-top:-0px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  border:.5px solid black;
+}
+img{
+   border: 2px solid black;
+   border-radius: 80px;
+   box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+   margin-top:-100px;
+   margin-right:-11px;
+}
+h2.end9-title {
+  font-family: Optima, sans-serif;
+  margin-right:-10px;
+  margin-top:-1px;    
+  letter-spacing:1px;
+}
+.me {
+  margin-right:-15px;
+  font-family: 'Josefin Slab', serif;
+}
+.card2 {
+  margin-top: 10px; 
+  padding-top:5px;
+  padding-left:5px;
+  padding-right:20px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px 15px 15px;
+  background-color:#a9a9a9;
+  padding-bottom:20px;
+}
+.card-in-card{ 
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px 15px 15px;
+  background:#c0c0c0;
+  margin-right:-15px;
+  margin-top:10px;
+  padding-top:10px;
+  padding-bottom:15px;
+}
+.main {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Cinzel Decorative', cursives;
+}
+.main-in {
+   font-family: 'Quicksand', sans-serif;
+   font-size:18px;
+   margin-bottom:15px;
+}
+a.contact {
+  display:inline-block;
+  font-size:20px;
+  text-decoration: none;
+  color:white;
+}
+strong {
+ font-size:20px;
+ color: white;
+}
+.github {
+  letter-spacing:2px;
+  font-size::30px;
+  font-family: 'Questrial', sans-serif;
+}
+.card-in-card2{
+  border:1px solid black;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px 15px 15px;
+  background:#c0c0c0;
+  margin-right:-15px;
+  margin-top:15px;
+  padding-top:10px;
+  text-align:left;
+  padding-right:20px;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+.me4 {
+  font-size:30px;
+  letter-spacing:1px;
+  margin-top:-30px;
+  margin-bottom:-30px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+p.me5 {
+  display:inline-block;
+  color:white;
+}
+.me6 {
+  font-size:18px;
+  display:inline-block;
+  font-family: 'Nixie One', cursive;
+}
+.me6 > label.me3 {
+  color:black;
+}
+input.me2:checked ~ .me6 > label.me3 {
+  color:#f8f8ff;
+}
+.dropdown-content {
+  display: none;
+}
+input.me2:checked ~ .dropdown-content {
+  display: block;
+  padding:8px;
+  font-family: 'Fredericka the Great', cursive;
+  border-radius:5px;
+}
+.card3 {
+  margin-top: 10px; 
+  padding-top:5px;
+  padding-left:5px;
+  padding-right:20px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  border-radius: 15px 15px 0px 0px;
+  background-color:#a9a9a9;
+  padding-bottom:20px;
+  margin-bottom:1px;
+}
+.card-in-card3{
+  border:1px solid black;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px 10px 10px 10px;
+  background:#c0c0c0;
+  margin-right:-15px;
+  margin-top:15px;
+  padding-top:10px;
+  text-align:left;
+  padding-right:20px;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+.upcoming {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size:20px;
+}
+.upcoming2{
+  font-size:15px;
+  font-family: 'Josefin Slab', serif;
+}
+li {
+  list-style-type: none;
+}
+.card4 { 
+  padding-top:5px;
+  padding-left:5px;
+  padding-right:20px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  border-radius: 0px 0px 15px 15px;
+  background-color:#a9a9a9;
+  padding-bottom:5px;
+  border-top:.5px solid #696969;
+  font-family: 'Josefin Slab', serif;
+}
+.copyrights {
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.1);
+  height: 22px;
+  width: 90%;
+  background-color: #dcdcdc;
+  font-family: 'Josefin Slab', serif;
+  border-radius: 3px;
+  margin-top:13px;
+}
