@@ -2,7 +2,6 @@
   Created by @xc0orotun
   Sunday 25 February 2018 9:16pm
 */
-@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 /* 
   A new burger menu modified my @xc0orotun
 */
@@ -225,26 +224,6 @@ h2.end9-title {
   font-size:20px;
   font-family: 'Harmattan', sans-serif;
   margin:10px;
-}
-.gift3 {
-  font-family: 'Droid Arabic Naskh', serif;
-}
-.me6 > label.me3 {
-  color:black;
-  font-family: 'Harmattan', sans-serif;
-  padding:5px;
-}
-input.me2:checked ~ .me6 > label.me3 {
-  color:#f8f8ff;
-}
-.dropdown-content {
-  display: none;
-}
-input.me2:checked ~ .dropdown-content {
-  display: block;
-  padding:8px;
-  font-family: 'Mada', sans-serif;;
-  border-radius:5px;
 }
 .card3 {
   margin-top: 10px; 
