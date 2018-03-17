@@ -1,0 +1,340 @@
+/*
+ Created by: @xc0orotun
+ Sunday 18 March 2018 01:26 am
+*/
+
+/* hide the input */ 
+  input {
+    display: none;
+  } 
+  /*styling user name */
+  .username {
+   position: fixed;
+   top: 15px;
+   float: right;
+   right: 15px;
+   z-index: 2;
+   transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+   visibility: visible;
+   font-size: 15px;
+   letter-spacing: 1px; 
+   font-family: 'Quicksand', sans-serif;
+  }
+  /* styling user name after check */
+  input:checked ~ .username {
+    visibility: hidden;
+    transition: visibility 0s linear 0.01s, opacity 0.01s linear;
+  }
+  /* styling burger */
+  .burger {
+   width: 3px;
+   border-radius: 2px;
+   position: fixed;
+   z-index: 2;
+   top: 15px;
+   left: 15px;
+  }
+  label.labone {
+  padding: 0px;
+  }
+  /* Add a new burger menu! */
+  .wrapper-menu {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+  }
+  .wrapper-menu.open {
+    transform: rotate(-45deg);  
+  }
+  .line-menu {
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+  }
+  .line-menu.half {
+    width: 50%;
+  }
+  .line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+  }
+  .open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+  }
+  .line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+  }
+  .open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+  }
+  /* styling barone */
+  .barone {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background-color: #c0c0c0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transition: .3s;
+    border-bottom: 3px solid #999;
+  }
+  /* styling barone after check */
+  input:checked ~ .barone {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 0 0;
+    transition: .3s;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+  }
+  /* styling barone-in-one */
+  .barone-in-one {
+    visibility: hidden;
+    margin-top: 120px;
+    margin-left: 10%;
+    opacity: 0;
+    transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+    width: 50%;
+  }
+  /* styling barone-in-two */
+  .barone-in-two {
+    visibility: hidden;
+    margin-top: 70px;
+    margin-left: 10%;
+    opacity: 0;
+    transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+    width: 50%;
+  }
+  /* styling barone-in-three */
+  .barone-in-three {
+    visibility: hidden;
+    margin-top: 70px;
+    margin-left: 10%;
+    opacity: 0;
+    transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+    width: 50%;
+  }
+  /* styling barone-in-one after check */
+   input:checked ~ .barone > .barone-in-one {
+    visibility: visible;
+    color: green;
+    opacity: 1;
+    transition: visibility s linear 0.9s, opacity 0.9s linear; 
+  }
+  /* styling barone-in-two after check */
+   input:checked ~ .barone > .barone-in-two {
+    visibility: visible;
+    color: green;
+    opacity: 1;
+    transition: visibility s linear 0.9s, opacity 0.9s linear;
+  }
+  /* styling barone-in-three after check */
+   input:checked ~ .barone > .barone-in-three {
+    visibility: visible;
+    color: green;
+    opacity: 1;
+    transition: visibility s linear 0.9s, opacity 0.9s linear;
+  }
+  /* styling links */
+  a.links {
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    color: #999;
+    font-size: 20px;
+  }
+  /* styling cydia soon */
+  b.cydiasoon {
+    color: red;
+    font-size: 10px;
+  }
+  /* styling cards! */
+  .cards {
+    width: 96%;
+    float: center;
+    background-color: #c0c0c0;
+    z-index: -1;
+    margin: 150px 0 0 0;
+    border-radius: 15px;
+    box-shadow: 0 0px 15px 0px rgba(0,0,0,0.4);
+    height: 100px;
+    border: 1px solid black;
+  }
+  /* styling more style1 */
+  .more-style1 {
+    width:15px;
+    height:15px;
+    background:#808080;
+    border-radius:50px;
+    border:.5px solid black;
+    float: left;
+    margin: 7px;
+  }
+  /* styling more style in1 */
+  .more-style-in1 {
+    width:10px;
+    height:10px;
+    background-color: #999;
+    border-radius:50px;
+    margin: 2.5px;
+  }
+  /* styling more style2*/
+  .more-style2 {
+    width:15px;
+    height:15px;
+    background:#808080;
+    border-radius:50px;
+    border:.5px solid black;
+    float: right;
+    margin: 7px;
+  }
+  /* styling more style in2*/
+  .more-style-in2 {
+    width:10px;
+    height:10px;
+    background-color: #999;
+    border-radius:50px;
+    margin: 2.5px;
+  }
+  /* styling avatar */
+  img{
+    border: 2px solid black;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+    margin-top:-75px;
+    margin-right: 0px;
+    }
+  h2.end9-title {
+    font-family: Optima, sans-serif;
+    letter-spacing:1px;
+  }
+  .me {
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 10px;
+  }
+  .cardsone {
+    width: 96%;
+    float: center;
+    background-color: #c0c0c0;
+    z-index: -1;
+    margin-top: -65px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 2px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    padding-bottom: 10px;
+  }
+  #idcard { 
+    display: inline-block;
+  }
+  /* styling to adjusting hr tag */
+  .hr-limited {
+    width: 70%;
+  }
+  /* styling social links */
+  a.sociallinks {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    margin: 10px;
+    text-shadow: 2px 2px #999;
+  }
+  /* styling social links (hover) */
+  a.sociallinks:hover {
+    color: #a9a9a9;
+    text-shadow: 1px 1px #999;
+  }
+  /* styling cardtwo */
+  .cardtwo {
+    width: 96%;
+    float: center;
+    background-color: #c0c0c0;
+    z-index: -1;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0px 15px 0px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    text-align: left;
+    height: 100px;
+  }
+  /* styling cardtwo in */
+  .cardtwo-in {
+    width: 96%;
+    float: center;
+    background-color: #c0c0c0;
+    z-index: -1;
+    margin-top: -70px;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px 0px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  /* styling card two in content */
+  .cardtwo-in-content {
+    float: center;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: left;
+    padding: 5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  /* styling wisdom */
+  b.wisdom {
+    letter-spacing: 2px;
+  }
+  /* styling wisdom word */
+  .wisdom-word {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  /* styling card two in content2 */
+  .cardtwo-in-content2 {
+    float: center;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: left;
+    padding: 5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  /* styling who's me */
+  b.whome {
+    letter-spacing: .5px;    
+  }
+  /* styling who me 2 */
+  .whome2 {
+    font-family: 'Raleway', sans-serif;
+  }
+  /* styling footer! */
+  footer.foter {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    z-index: -1;
+    margin-bottom: 10px;
+    float: center;
+  }
+  /* styling copy right */
+  .copyrights {
+    height: 22px;
+    width: 90%;
+    font-family: 'Josefin Slab', serif;
+    margin-top:13px;
+    font-size: 12px;
+  }
