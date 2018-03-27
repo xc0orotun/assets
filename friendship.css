@@ -1,0 +1,245 @@
+/* 
+This file {CSS} has been created by @xc0orotun web developer 
+In 27 Mar 2018 2:12pm
+*/
+/* styling body */
+body {
+  margin-top: 60px;
+}
+/* styling input */
+input.show-hide {
+  display: none;
+  display: fixed;
+}
+/* styling label */
+label.burger {
+  position: fixed;
+  color: black;
+  top: 13px;
+  left: 13px;
+  z-index: 2;
+}
+/* styling label checked */
+input.show-hide:checked ~ label.burger {
+  top: 18px;
+}
+/* styling bur */
+.buri {
+  width: 30px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 1.5px;
+  transition: .3s;
+  box-shadow: 0 0px 15px 0px rgba(0,0,0,0.4);
+}
+.burii {
+  width: 30px;
+  height: 5px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 1.5px;
+  transition: .3s;
+  box-shadow: 0 0px 15px 0px rgba(0,0,0,0.4);
+}
+/* styling bur checked */
+input.show-hide:checked ~ label.burger > .buri {
+  transform: rotate(-135deg);
+  margin-bottom: -5px;
+}
+input.show-hide:checked ~ label.burger > .burii {
+  transform: rotate(135deg);
+  margin-top: -5px;
+}
+/* styling navs */
+.navs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px; 
+  background-color: #c0c0c0;
+  border-bottom: 3px solid #a9a;
+}
+/* styling drop-menu */
+.menu {
+  position: fixed;
+  top: 40px;
+  height: 0;
+  left: 0;
+  right: 0;
+  background-color: #c0c0c0;
+  transition: .3s;
+  z-index: 1;
+  transition-delay: .4s;
+}
+/* styling checked drop-menu */
+input.show-hide:checked ~ center > .menu {
+  height: 100%;
+  transition-delay: .2s;
+  transition: .4s;
+}
+/* styling avatar */
+img.myPic {
+  border: 2px solid white;
+  border-radius: 80px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+  visibility: hidden;
+  margin-top: 5%;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  transition: opacity .3s;
+  transition-delay: .3s;
+}
+input.show-hide:checked ~ center > .menu > img.myPic {
+  visibility: visible;
+  transition: visibility 0 linear 0.5s, opacity 0.5s linear;
+  transition: opacity .5s;
+  opacity: 1;
+  transition-delay: .5s;
+}
+/* styling menu-in */
+center > .menu > .menu-in {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+}
+input.show-hide:checked ~ center > .menu > .menu-in {
+  visibility: visible;
+  transition: visibility 0 linear 0.6s, opacity 0.6s linear;
+  transition: opacity .6s;
+  opacity: 1;
+  transition-delay: .6s;
+}
+/* styling options */
+center > .menu > .menu-in > p > a.options {
+  font-size: 15px;
+  padding: 2.5px 15px 2.5px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 15px 0 15px;
+  color: black;
+}
+center > .menu > .menu-in > p > a.options:hover {
+   background-color: white;
+   color: black;
+   box-shadow: 0 0px 15px 0px rgba(0,0,0,0.4);
+   border: 0.5px solid #999;
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* styling cards */
+.cards {
+  width: 94%;
+  background-color: #dcdcdc;
+  z-index: -1;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* styling image of class */ 
+.cards > img.classPic {
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 80px;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+}
+/* styling title1 */
+.cards > p.title1 {
+  font-size: 20px;
+  font-family: 'El Messiri', sans-serif;
+  padding: 10px;
+  margin-top: -5px;
+}
+
+/* styling cards */
+.cards2 {
+  width: 94%;
+  background-color: #dcdcdc;
+  z-index: -1;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+/* styling title1 */
+.cards2 > p.title2 {
+  font-size: 25px;
+  font-family: 'El Messiri', sans-serif;
+  padding: 1px;
+}
+/* styling hr */
+.cards2 > hr {
+  width: 70%;
+}
+/* styling list */
+.cards2 > li {
+  list-style-type: none;
+}
+/* styling foter */
+.foter {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  font-size: 10px;
+  z-index: -2;
+  text-align: center;
+}
