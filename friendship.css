@@ -204,7 +204,6 @@ center > .menu > .menu-in > p > a.options:hover {
   padding: 10px;
   margin-top: -5px;
 }
-
 /* styling cards */
 .cards2 {
   width: 94%;
@@ -217,6 +216,7 @@ center > .menu > .menu-in > p > a.options:hover {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 /* styling title1 */
 .cards2 > p.title2 {
@@ -231,6 +231,17 @@ center > .menu > .menu-in > p > a.options:hover {
 /* styling list */
 .cards2 > li {
   list-style-type: none;
+  margin-bottom: 10px;
+}
+/* styling dots */
+a.next-to {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0px 15px 0px rgba(0,0,0,0.4);
+  border: 0.5px solid #999;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 /* styling foter */
 .foter {
